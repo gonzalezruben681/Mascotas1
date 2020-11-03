@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Contacto">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/actionbar2">
+    </include>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tpEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="@dimen/derecha"
+        android:layout_marginLeft="@dimen/izquierda">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tpTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tpNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tpEmail"
+        android:layout_marginTop="@dimen/top"
+        android:layout_marginRight="@dimen/derecha"
+        android:layout_marginLeft="@dimen/izquierda">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tpTextNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/nombre"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tpComentario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tpNombre"
+        android:layout_marginRight="@dimen/derecha"
+        android:layout_marginLeft="@dimen/izquierda"
+        android:layout_marginTop="@dimen/top">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tpTextComentario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/comentario"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enviar Comentario"
+        android:layout_below="@id/tpComentario"
+        android:layout_marginRight="@dimen/derecha"
+        android:layout_marginLeft="@dimen/izquierda"/>
+
+
+</RelativeLayout>
